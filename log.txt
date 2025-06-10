@@ -1,1 +1,32 @@
-[edulsp]2025/06/09 21:52:10 main.go:14: Started
+[edulsp] 2025/06/10 23:43:58 main.go:17: Started
+[edulsp] 2025/06/10 23:43:58 main.go:36: initialize
+[edulsp] 2025/06/10 23:43:58 main.go:44: Connected to: Neovim 0.11.2+dirty
+[edulsp] 2025/06/10 23:43:58 main.go:51: Sent the reply
+[edulsp] 2025/06/10 23:43:58 main.go:36: initialized
+[edulsp] 2025/06/10 23:43:58 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/10 23:43:58 main.go:58: Opened: file:///home/dregos/edulsp/README.md
+ # EDU LSP
+
+training exercise for learning the Language Server Protocol
+hello
+[edulsp] 2025/06/10 23:44:00 main.go:36: textDocument/hover
+[edulsp] 2025/06/10 23:44:00 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/10 23:44:00 main.go:58: Opened: file://
+ Hello, from edulsp
+[edulsp] 2025/06/10 23:44:01 main.go:36: textDocument/didClose
+[edulsp] 2025/06/10 23:44:02 main.go:36: textDocument/hover
+[edulsp] 2025/06/10 23:44:02 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/10 23:44:02 main.go:58: Opened: file://
+ Hello, from edulsp
+[edulsp] 2025/06/10 23:44:08 main.go:36: textDocument/didClose
+[edulsp] 2025/06/10 23:45:35 main.go:36: textDocument/hover
+[edulsp] 2025/06/10 23:45:35 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/10 23:45:35 main.go:58: Opened: file://
+ Hello, from edulsp
+[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/didClose
+[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/hover
+[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/10 23:45:36 main.go:58: Opened: file://
+ Hello, from edulsp
+[edulsp] 2025/06/10 23:45:54 main.go:36: textDocument/didClose
+[edulsp] 2025/06/10 23:45:54 main.go:36: shutdown
