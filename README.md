@@ -1,4 +1,16 @@
 # EDU LSP
-
 training exercise for learning the Language Server Protocol
-hello
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+
+Neovim
+VS C*de

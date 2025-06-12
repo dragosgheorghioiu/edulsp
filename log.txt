@@ -1,32 +1,74 @@
-[edulsp] 2025/06/10 23:43:58 main.go:17: Started
-[edulsp] 2025/06/10 23:43:58 main.go:36: initialize
-[edulsp] 2025/06/10 23:43:58 main.go:44: Connected to: Neovim 0.11.2+dirty
-[edulsp] 2025/06/10 23:43:58 main.go:51: Sent the reply
-[edulsp] 2025/06/10 23:43:58 main.go:36: initialized
-[edulsp] 2025/06/10 23:43:58 main.go:36: textDocument/didOpen
-[edulsp] 2025/06/10 23:43:58 main.go:58: Opened: file:///home/dregos/edulsp/README.md
- # EDU LSP
+[edulsp] 2025/06/12 14:13:28 main.go:17: Started
+[edulsp] 2025/06/12 14:13:28 main.go:36: initialize
+[edulsp] 2025/06/12 14:13:28 main.go:44: Connected to: Neovim 0.11.2
+[edulsp] 2025/06/12 14:13:28 main.go:104: Content-Length: 201
 
+{"jsonrpc":"2.0","id":1,"result":{"capabilities":{"textDocumentSync":1,"hoverProvider":true,"definitionProvider":true,"codeActionProvider":true},"serverInfo":{"name":"edulsp","version":"0.0.0.0.0.1"}}}
+[edulsp] 2025/06/12 14:13:28 main.go:51: Sent the reply
+[edulsp] 2025/06/12 14:13:28 main.go:36: initialized
+[edulsp] 2025/06/12 14:13:28 main.go:36: textDocument/didOpen
+[edulsp] 2025/06/12 14:13:28 main.go:58: Opened: file:///Users/dragos.gheorghioiu/personal/edulsp/README.md
+ # EDU LSP
 training exercise for learning the Language Server Protocol
-hello
-[edulsp] 2025/06/10 23:44:00 main.go:36: textDocument/hover
-[edulsp] 2025/06/10 23:44:00 main.go:36: textDocument/didOpen
-[edulsp] 2025/06/10 23:44:00 main.go:58: Opened: file://
- Hello, from edulsp
-[edulsp] 2025/06/10 23:44:01 main.go:36: textDocument/didClose
-[edulsp] 2025/06/10 23:44:02 main.go:36: textDocument/hover
-[edulsp] 2025/06/10 23:44:02 main.go:36: textDocument/didOpen
-[edulsp] 2025/06/10 23:44:02 main.go:58: Opened: file://
- Hello, from edulsp
-[edulsp] 2025/06/10 23:44:08 main.go:36: textDocument/didClose
-[edulsp] 2025/06/10 23:45:35 main.go:36: textDocument/hover
-[edulsp] 2025/06/10 23:45:35 main.go:36: textDocument/didOpen
-[edulsp] 2025/06/10 23:45:35 main.go:58: Opened: file://
- Hello, from edulsp
-[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/didClose
-[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/hover
-[edulsp] 2025/06/10 23:45:36 main.go:36: textDocument/didOpen
-[edulsp] 2025/06/10 23:45:36 main.go:58: Opened: file://
- Hello, from edulsp
-[edulsp] 2025/06/10 23:45:54 main.go:36: textDocument/didClose
-[edulsp] 2025/06/10 23:45:54 main.go:36: shutdown
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+
+VS Code
+VS Code
+[edulsp] 2025/06/12 14:13:31 main.go:36: textDocument/codeAction
+[edulsp] 2025/06/12 14:13:31 main.go:104: Content-Length: 925
+
+{"jsonrpc":"2.0","id":2,"result":[{"title":"Replace VS Code with a superior editor.","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":7}},"newText":"Neovim"}]}}},{"title":"Censor to VS C*de","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":7}},"newText":"VS C*de"}]}}},{"title":"Replace VS Code with a superior editor.","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":15,"character":0},"end":{"line":15,"character":7}},"newText":"Neovim"}]}}},{"title":"Censor to VS C*de","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":15,"character":0},"end":{"line":15,"character":7}},"newText":"VS C*de"}]}}}]}
+[edulsp] 2025/06/12 14:13:33 main.go:36: textDocument/didChange
+[edulsp] 2025/06/12 14:13:33 main.go:69: Changed: file:///Users/dragos.gheorghioiu/personal/edulsp/README.md
+ [{# EDU LSP
+training exercise for learning the Language Server Protocol
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+
+Neovim
+VS Code
+}]
+[edulsp] 2025/06/12 14:13:35 main.go:36: textDocument/codeAction
+[edulsp] 2025/06/12 14:13:35 main.go:104: Content-Length: 480
+
+{"jsonrpc":"2.0","id":3,"result":[{"title":"Replace VS Code with a superior editor.","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":15,"character":0},"end":{"line":15,"character":7}},"newText":"Neovim"}]}}},{"title":"Censor to VS C*de","edit":{"changes":{"file:///Users/dragos.gheorghioiu/personal/edulsp/README.md":[{"range":{"start":{"line":15,"character":0},"end":{"line":15,"character":7}},"newText":"VS C*de"}]}}}]}
+[edulsp] 2025/06/12 14:13:36 main.go:36: textDocument/didChange
+[edulsp] 2025/06/12 14:13:36 main.go:69: Changed: file:///Users/dragos.gheorghioiu/personal/edulsp/README.md
+ [{# EDU LSP
+training exercise for learning the Language Server Protocol
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+hehehe
+
+Neovim
+VS C*de
+}]
+[edulsp] 2025/06/12 14:13:37 main.go:36: textDocument/didSave
+[edulsp] 2025/06/12 14:13:38 main.go:36: shutdown

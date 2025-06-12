@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	logger := getLogger("/home/dregos/edulsp/log.txt")
+	logger := getLogger("./log.txt")
 	logger.Println("Started")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(rpc.Split)
@@ -46,7 +46,7 @@ func handleMessage(logger *log.Logger, writer io.Writer, state analysis.State, m
 			request.Params.ClientInfo.Version)
 
 		msg := lsp.NewInitializeResponse(request.ID)
-		writeResponse(writer, msg)
+		writeResponse(writer, msg, logger)
 
 		logger.Println("Sent the reply")
 	case "textDocument/didOpen":
@@ -78,23 +78,28 @@ func handleMessage(logger *log.Logger, writer io.Writer, state analysis.State, m
 		if err := json.Unmarshal(contents, &request); err != nil {
 			logger.Printf("textDocument/hover: Could not parse this: %s", err)
 		}
-
-		response := lsp.HoverResponse{
-			Response: lsp.Response{
-				RPC: "2.0",
-				ID: &request.ID,
-			},
-			Result: lsp.HoverResult{
-				Contents: "Hello, from edulsp",
-			},
+		response := state.Hover(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		writeResponse(writer, response, logger)
+	case "textDocument/definition":
+		var request lsp.HoverRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			logger.Printf("textDocument/definition: Could not parse this: %s", err)
 		}
-
-		writeResponse(writer, response)
+		response := state.Definition(request.ID, request.Params.TextDocument.URI, request.Params.Position)
+		writeResponse(writer, response, logger)
+	case "textDocument/codeAction":
+		var request lsp.CodeActionRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			logger.Printf("textDocument/definition: Could not parse this: %s", err)
+		}
+		response := state.CodeAction(request.ID, request.Params.TextDocument.URI)
+		writeResponse(writer, response, logger)
 	}
 }
 
-func writeResponse(writer io.Writer, msg any) {
+func writeResponse(writer io.Writer, msg any, logger *log.Logger) {
 	reply := rpc.EncodeMessage(msg)
+	logger.Println(reply)
 	writer.Write([]byte(reply))
 }
 
